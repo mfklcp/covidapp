@@ -7,13 +7,14 @@ class LegendaCasos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final queryData = MediaQuery.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
       child: Container(
         child: Text('casos\n$legendaCasos',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 18.0,
+              fontSize: queryData.size.height/45,
               fontFamily: 'Gotham-black',
             )),
       ),

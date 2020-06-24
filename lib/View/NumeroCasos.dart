@@ -7,11 +7,13 @@ class NumeroCasos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final queryData = MediaQuery.of(context);
+
     return (Container(
       child: Text(numeroCasos,
           style: TextStyle(
             color: Colors.white,
-            fontSize: 56.0,
+            fontSize: queryData.size.height/12,
             fontFamily: 'Gotham-black',
           )),
     ));

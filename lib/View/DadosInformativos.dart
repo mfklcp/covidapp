@@ -53,21 +53,30 @@ class DadosInformativos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final queryData = MediaQuery.of(context);
+
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-      Container(width: 50,color: Colors.white //CONTAINER VAZIO PARA AJUSTAR O ALINHAMENTO
+      Container(
+
+          width: 50,
+          color: Colors.white //CONTAINER VAZIO PARA AJUSTAR O ALINHAMENTO
           ),
       Container(
           alignment: Alignment.centerRight,
-          width: 74,
+
+          //height: queryData.size.height / 1,
+          width: queryData.size.width / 6,
+
           child: ImagensDoentes(referenciaTipo)), //FAZER ENUM
       Container(
         alignment: Alignment.center,
-        width: 150,
+        width: queryData.size.width / 3,
         child: NumeroCasos(numeroCasos.toString()),
       ),
       Container(
           alignment: Alignment.centerLeft,
-          width: 125,
+          height: queryData.size.width / 6,
+          width: queryData.size.width / 3,
           child: LegendaCasos(referenciaTipo)),
     ]);
   }

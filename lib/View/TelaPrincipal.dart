@@ -5,6 +5,9 @@ import 'DadosInformativos.dart';
 class TelaPrincipal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    final queryData = MediaQuery.of(context);
+
     return Scaffold(
       backgroundColor: Color.fromRGBO(0, 0, 80, 1),
       appBar: AppBar(
@@ -13,11 +16,11 @@ class TelaPrincipal extends StatelessWidget {
         title: Row(
           //  mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'img/logo.png',
-              fit: BoxFit.contain,
-              height: 32,
-            ),
+            //Image.asset(
+              //'img/logo.png',
+              //fit: BoxFit.contain,
+              //height: 32,
+            //),
             Container(
               padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
               child: Text(
