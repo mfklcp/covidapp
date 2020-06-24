@@ -14,7 +14,7 @@ class LegendaCasos extends StatelessWidget {
         child: Text('casos\n$legendaCasos',
             style: TextStyle(
               color: Colors.white,
-              fontSize: queryData.size.height/45,
+              fontSize: queryData.size.height/55,
               fontFamily: 'Gotham-black',
             )),
       ),

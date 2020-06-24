@@ -13,7 +13,7 @@ class NumeroCasos extends StatelessWidget {
       child: Text(numeroCasos,
           style: TextStyle(
             color: Colors.white,
-            fontSize: queryData.size.height/12,
+            fontSize: queryData.size.height/17,
             fontFamily: 'Gotham-black',
           )),
     ));

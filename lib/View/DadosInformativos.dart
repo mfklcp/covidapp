@@ -70,13 +70,12 @@ class DadosInformativos extends StatelessWidget {
           child: ImagensDoentes(referenciaTipo)), //FAZER ENUM
       Container(
         alignment: Alignment.center,
-        width: queryData.size.width / 3,
+        width: queryData.size.width / 2.5,
         child: NumeroCasos(numeroCasos.toString()),
       ),
       Container(
           alignment: Alignment.centerLeft,
-          height: queryData.size.width / 6,
-          width: queryData.size.width / 3,
+          width: queryData.size.width / 4,
           child: LegendaCasos(referenciaTipo)),
     ]);
   }

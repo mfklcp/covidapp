@@ -129,7 +129,7 @@ class TelaPrincipal extends StatelessWidget {
                 DadosInformativos(3, 115),
                 DadosInformativos(4, 1),
                 DadosInformativos(5, 999),
-                DadosInformativos(6, 999),
+                DadosInformativos(6, 9999),
               ],
             ),
             Column(children: <Widget>[
