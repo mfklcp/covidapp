@@ -1,6 +1,6 @@
 # covidapp
 
-A new Flutter project.
+A Flutter project which aims to present in real time the number of cases of covid in small or large cities..
 
 ## Getting Started
 
